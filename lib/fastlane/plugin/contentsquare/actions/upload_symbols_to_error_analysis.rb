@@ -33,7 +33,8 @@ module Fastlane
         [
           FastlaneCore::ConfigItem.new(key: :dsyms_path,
                                description: "Path where the dSYM files are located",
-                                  optional: false,
+                             default_value: Actions.lane_context[SharedValues::DSYM_OUTPUT_PATH],
+                                  optional: true,
                                       type: String),
           FastlaneCore::ConfigItem.new(key: :project_id,
                                   env_name: "ERROR_ANALYSIS_PROJECT_ID",
