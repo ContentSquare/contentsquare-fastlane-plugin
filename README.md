@@ -16,7 +16,7 @@ You can use this plugin to upload dSYM files to Error Analysis to symbolicate cr
 
 ## Example
 
-Check out the [example Fastfile](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+Check out the [example Fastfile](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `[bundle exec] fastlane install_plugins` and `[bundle exec] fastlane test`.
 
 ## Issues and Feedback
 
