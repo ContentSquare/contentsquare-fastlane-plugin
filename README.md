@@ -1,14 +1,14 @@
-# contentsquare plugin
-
-[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-upload_symbols_to_error_analysis)
+# Contentsquare plugin
 
 ## Getting Started
 
-This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-contentsquare`, add it to your project by running:
+This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-contentsquare`, add it to your project:
 
-```bash
-[bundle exec] fastlane add_plugin contentsquare
+```ruby
+gem "fastlane-plugin-contentsquare", git: "https://github.com/ContentSquare/contentsquare-fastlane-plugin"
 ```
+
+For more details on how to add the plugin to your project, see [how to use fastlane plugins](https://docs.fastlane.tools/plugins/using-plugins/)
 
 ## About contentsquare
 
@@ -16,7 +16,7 @@ You can use this plugin to upload dSYM files to Error Analysis to symbolicate cr
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+Check out the [example Fastfile](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `[bundle exec] fastlane install_plugins` and `[bundle exec] fastlane test`.
 
 ## Issues and Feedback
 
@@ -28,8 +28,4 @@ If you have trouble using plugins, check out the [Plugins Troubleshooting](https
 
 ## Using _fastlane_ Plugins
 
-For more information about how the `fastlane` plugin system works, check out the [Plugins documentation](https://docs.fastlane.tools/plugins/create-plugin/).
-
-## About _fastlane_
-
-_fastlane_ is the easiest way to automate beta deployments and releases for your iOS and Android apps. To learn more, check out [fastlane.tools](https://fastlane.tools).
+For more information about how the `fastlane` plugin system works, check out the [Plugins documentation](https://docs.fastlane.tools/plugins/using-plugins/).
