@@ -9,7 +9,9 @@ module Fastlane
           dsyms_path: params[:dsyms_path],
           project_id: params[:project_id],
           client_id: params[:client_id],
-          client_secret: params[:client_secret]
+          client_secret: params[:client_secret],
+          proxy: params[:proxy],
+          verbose: params[:verbose]
         )
       end
 
@@ -50,7 +52,18 @@ module Fastlane
                                   env_name: "ERROR_ANALYSIS_CLIENT_SECRET",
                                description: "Client secret",
                                   optional: false,
-                                      type: String)
+                                      type: String),
+          FastlaneCore::ConfigItem.new(key: :proxy,
+                                  env_name: "ERROR_ANALYSIS_PROXY",
+                               description: "Proxy",
+                                  optional: true,
+                                      type: String),
+          FastlaneCore::ConfigItem.new(key: :verbose,
+                                  env_name: "ERROR_ANALYSIS_VERBOSE",
+                               description: "Enable verbose mode to print more detailed output",
+                                 is_string: false,
+                                  optional: true,
+                                      type: Boolean)
         ]
       end
 
