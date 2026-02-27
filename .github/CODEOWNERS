@@ -7,11 +7,8 @@
 # ==============
 # !!! Always keep it on the last lines of the CODEOWNERS file !!!
 
-# Dockerfile describes the images that will be put into production
-Dockerfile* @ContentSquare/Platform
-
 # .github controls CODEOWNERS
-/.github/CODEOWNERS @ContentSquare/Platform
+/.github/CODEOWNERS @ContentSquare/devx
 
 # Protect .github/agents folder for GitHub Copilot agents
 /.github/agents/ @ContentSquare/ios
